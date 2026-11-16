@@ -1,0 +1,28 @@
+{
+  "window_id": "W-001",
+  "slice_id": "slice-eMBB-01",
+  "timestamp": "2026-11-16T18:00:00Z",
+  "auth": {
+    "auth_type": "token",
+    "token_id": "tok_A06_demo_001"
+  },
+  "radio": {
+    "rsrp_dbm": -110,
+    "sinr_db": 2.5,
+    "prb_util_pct": 88
+  },
+  "transport": {
+    "latency_ms": 45,
+    "packet_loss_pct": 2.1
+  },
+  "core": {
+    "cpu_pct": 78,
+    "session_drop_rate": 0.05
+  },
+  "targets": {
+    "latency_ms_max": 20,
+    "throughput_mbps_min": 100,
+    "availability_pct_min": 99.9
+  },
+  "notes": "Token value is secret and never stored. Only token_id is stored for tracing. Source: 3GPP TS 28.552"
+}
