@@ -1,0 +1,23 @@
+{
+  "window_id": "W-001",
+  "slice_id": "slice-eMBB-01",
+  "decision": "ANOMALOUS",
+  "sla_status": "BREACH",
+  "breach_details": {
+    "latency_ms": 45,
+    "latency_target_ms": 20,
+    "throughput_mbps": 85,
+    "throughput_target_mbps": 100
+  },
+  "root_cause": {
+    "domain": "Transport",
+    "evidence": "Latency 45ms > 20ms target and packet_loss 2.1%",
+    "confidence": "HIGH"
+  },
+  "human_brief": "Slice slice-eMBB-01 breached SLA in window W-001. Latency 45ms vs 20ms target. Likely Transport issue. Human review needed.",
+  "suggested_action": "Check transport link for congestion, do not auto-change slice config.",
+  "trace": {
+    "token_id": "tok_A06_demo_001",
+    "evaluation": "held-out-test-01"
+  }
+}
